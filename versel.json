@@ -1,5 +1,6 @@
 {
-    "routes": [
-      { "src": "/(.*)", "dest": "/api/main.go" }
+    "trailingSlash": false,
+    "rewrites": [
+      { "source": "/api(.*)", "destination": "/api/main.go" }
     ]
   }
